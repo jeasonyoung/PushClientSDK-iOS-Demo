@@ -67,7 +67,7 @@
     NSLog(@"pushClientSDK-ERROR(%zd):\n%@", type, desc);
 }
 
--(void)pushClientSDK:(PushClientSDK *)sdk withIsApns:(BOOL)isApns receivePushMessageTitle:(NSString *)title andMessageContent:(NSString *)content withFullPublish:(PublishModel *)data{
+-(void)pushClientSDK:(PushClientSDK *)sdk withIsApns:(BOOL)isApns receivePushMessageTitle:(NSString *)title andMessageContent:(NSString *)content withFullPublish:(PushPublishModel *)data{
     
     NSLog(@"pushClientSDK(%p)[isAPNS:%zd]=>(title:%@)\n%@", sdk, isApns, title, content);
     
