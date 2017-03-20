@@ -49,7 +49,7 @@
 }
 
 -(void)onStartClicked{
-    NSString *deviceId = @"test-app-001";
+    NSString *deviceId = @"test-ios-app-001";
     NSData *deviceToken = [deviceId dataUsingEncoding:NSUTF8StringEncoding];
     
     PushClientSDK *sdk = [PushClientSDK sharedInstance];
