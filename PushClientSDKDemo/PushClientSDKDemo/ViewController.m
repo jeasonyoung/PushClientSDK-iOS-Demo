@@ -10,10 +10,7 @@
 #import "Masonry.h"
 
 #import "PushClientSDK.h"
-
-NSString * const PUSH_HOST = @"http://162.16.4.36:8080";
-NSString * const PUSH_ACCOUNT = @"test";
-NSString * const PUSH_TOKEN = @"123456";
+#import "PushClientConfig.h"
 
 
 @interface ViewController ()

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4596EA1556CD5046B184A3A6 /* libPods-PushClientSDKDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 26D21600D6DEA7364C2F0286 /* libPods-PushClientSDKDemo.a */; };
+		A13CF2961E7F7FF40081CA79 /* PushClientConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = A13CF2951E7F7FF40081CA79 /* PushClientConfig.m */; };
 		A15FE5DB1E651EC0009A36D0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A15FE5DA1E651EC0009A36D0 /* main.m */; };
 		A15FE5DE1E651EC0009A36D0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A15FE5DD1E651EC0009A36D0 /* AppDelegate.m */; };
 		A15FE5E11E651EC0009A36D0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A15FE5E01E651EC0009A36D0 /* ViewController.m */; };
@@ -37,6 +38,8 @@
 		26D21600D6DEA7364C2F0286 /* libPods-PushClientSDKDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PushClientSDKDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DF257EDB13ECEB1D12BE905 /* Pods-PushClientSDKDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PushClientSDKDemo.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-PushClientSDKDemo/Pods-PushClientSDKDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		6DEF5E0846AA71869EE7CEBE /* Pods-PushClientSDKDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PushClientSDKDemo.release.xcconfig"; path = "../Pods/Target Support Files/Pods-PushClientSDKDemo/Pods-PushClientSDKDemo.release.xcconfig"; sourceTree = "<group>"; };
+		A13CF2941E7F7FF40081CA79 /* PushClientConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PushClientConfig.h; sourceTree = "<group>"; };
+		A13CF2951E7F7FF40081CA79 /* PushClientConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PushClientConfig.m; sourceTree = "<group>"; };
 		A15FE5D61E651EC0009A36D0 /* PushClientSDKDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PushClientSDKDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A15FE5DA1E651EC0009A36D0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A15FE5DC1E651EC0009A36D0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -125,6 +128,8 @@
 				A15FE5DD1E651EC0009A36D0 /* AppDelegate.m */,
 				A15FE5DF1E651EC0009A36D0 /* ViewController.h */,
 				A15FE5E01E651EC0009A36D0 /* ViewController.m */,
+				A13CF2941E7F7FF40081CA79 /* PushClientConfig.h */,
+				A13CF2951E7F7FF40081CA79 /* PushClientConfig.m */,
 				A15FE5E51E651EC0009A36D0 /* Assets.xcassets */,
 				A15FE5EA1E651EC0009A36D0 /* Info.plist */,
 				A15FE5D91E651EC0009A36D0 /* Supporting Files */,
@@ -345,6 +350,7 @@
 			files = (
 				A15FE5E11E651EC0009A36D0 /* ViewController.m in Sources */,
 				A15FE5DE1E651EC0009A36D0 /* AppDelegate.m in Sources */,
+				A13CF2961E7F7FF40081CA79 /* PushClientConfig.m in Sources */,
 				A15FE5DB1E651EC0009A36D0 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

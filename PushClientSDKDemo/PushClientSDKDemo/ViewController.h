@@ -8,10 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-UIKIT_EXTERN NSString * const PUSH_HOST;
-UIKIT_EXTERN NSString * const PUSH_ACCOUNT;
-UIKIT_EXTERN NSString * const PUSH_TOKEN;
-
 @interface ViewController : UIViewController
 
 
