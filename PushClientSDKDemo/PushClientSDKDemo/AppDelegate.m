@@ -45,6 +45,19 @@
     }
 }
 
+#pragma mark -- 接收APNS消息开始
+-(void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo{
+    
+    [_pushSDK receiveRemoteNotification:userInfo];
+}
+
+-(void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo fetchCompletionHandler:(void (^)(UIBackgroundFetchResult))completionHandler{
+    
+    [_pushSDK receiveRemoteNotification:userInfo];
+    
+}
+#pragma mark -- 接收APNS消息结束
+
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
@@ -52,6 +65,7 @@
 }
 
 
+#pragma mark -- App进入后台
 - (void)applicationDidEnterBackground:(UIApplication *)application {
     @try{
         //应用进入后台,关闭推送服务
@@ -64,7 +78,7 @@
     // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
 }
 
-
+#pragma mark -- App进入前台
 - (void)applicationWillEnterForeground:(UIApplication *)application {
     @try{
         //应用进入前台,重启推送服务
@@ -93,6 +107,7 @@
 }
 
 -(void)pushClientSDK:(PushClientSDK *)sdk withIsApns:(BOOL)isApns receivePushMessageTitle:(NSString *)title andMessageContent:(NSString *)content withFullPublish:(PushPublishModel *)data{
+    
     
     NSLog(@"pushClientSDK(%p)[isAPNS:%zd]=>(title:%@)\n%@", sdk, isApns, title, content);
     
